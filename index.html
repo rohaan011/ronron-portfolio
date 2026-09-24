@@ -1,658 +1,456 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta
-        name="description"
-        content="Rohan Prajapati Portfolio"
-    >
+    <meta name="description" content="Rohan Prajapati Portfolio" />
 
-    <title>Rohan Prajapati Portfolio
-    </title>
+    <title>Rohan Prajapati Portfolio</title>
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap"
-        rel="stylesheet"
-    >
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- Custom Cursor -->
-    <div class="cursor">
-    </div>
+    <div class="cursor"></div>
 
     <!-- Cursor follower -->
     <div class="cursor-follower"></div>
-
 
     <!-- =========================================
          NAVIGATION
     ========================================== -->
 
     <header class="site-header" id="site-header">
+      <nav class="navbar">
+        <a href="#top" class="logo"> Rohan Prajapati </a>
 
-        <nav class="navbar">
-
-            <a href="#top" class="logo">
-                Rohan Prajapati
-            </a>
-
-            <div class="nav-center">
-                <a href="#work">Work</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </div>
-
-            <a href="assets/RohanPrajapatiCV.pdf" class="nav-cv" download>
-    <span>Download CV</span>
-    <span>↓</span>
-</a>
-
-            <button
-                class="menu-toggle"
-                aria-label="Open navigation menu"
-                aria-expanded="false"
-            >
-                <span></span>
-                <span></span>
-            </button>
-
-        </nav>
-
-        <!-- Mobile Navigation -->
-        <div class="mobile-menu">
-
-            <a href="#work">Work</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-
-            <a href="assets/RohanPrajapatiCV.pdf" class="mobile-cv" download>
-    Download CV ↓
-</a>
-
+        <div class="nav-center">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
         </div>
 
+        <a href="assets/RohanPrajapatiCV.pdf" class="nav-cv" download>
+          <span>Download CV</span>
+          <span>↓</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+
+      <!-- Mobile Navigation -->
+      <div class="mobile-menu">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+
+        <a href="assets/RohanPrajapatiCV.pdf" class="mobile-cv" download>
+          Download CV ↓
+        </a>
+      </div>
     </header>
 
-
     <main id="top">
-
-        <!-- =========================================
+      <!-- =========================================
              HERO
         ========================================== -->
 
-        <section class="hero">
+      <section class="hero">
+        <div class="hero-top">
+          <p class="eyebrow">UI/UX DESIGNER / Product Designer</p>
 
-            <div class="hero-top">
+          <p class="hero-location">Based in Nepal</p>
+        </div>
 
-                <p class="eyebrow">
-                    UI/UX DESIGNER / Product Designer
-                </p>
+        <div class="hero-heading">
+          <div class="hero-text">
+            <h1>
+              I design
+              <br />
+              <span class="serif italic">digital experiences</span>
+              <br />
+              that make sense.
+            </h1>
+          </div>
 
-                <p class="hero-location">
-                    Based in Nepal
-                </p>
+          <div class="hero-image">
+            <img src="images/ronron.png" alt="Rohan Prajapati" />
+          </div>
+        </div>
 
-            </div>
+        <div class="hero-bottom">
+          <p class="hero-intro">
+            Designing thoughtful digital experiences through research,
+            interaction, visual design and prototyping.
+          </p>
 
+          <a href="#work" class="scroll-link">
+            <span>Scroll to explore</span>
+            <span class="scroll-arrow">↓</span>
+          </a>
+        </div>
+      </section>
 
-            <div class="hero-heading">
-
-    <div class="hero-text">
-        <h1>
-            I design
-            <br>
-            <span class="serif italic">digital experiences</span>
-            <br>
-            that make sense.
-        </h1>
-    </div>
-
-    <div class="hero-image">
-        <img src="images/ronron.png" alt="Rohan Prajapati">
-    </div>
-
-</div>
-
-
-            <div class="hero-bottom">
-
-                <p class="hero-intro">
-                    Designing thoughtful digital experiences through
-                    research, interaction, visual design and prototyping.
-                </p>
-
-                <a href="#work" class="scroll-link">
-                    <span>Scroll to explore</span>
-                    <span class="scroll-arrow">↓</span>
-                </a>
-
-            </div>
-
-        </section>
-
-                <!-- =========================================
+      <!-- =========================================
              ABOUT
         ========================================== -->
 
-        <section class="about-section section" id="about">
+      <section class="about-section section" id="about">
+        <div class="section-header">
+          <span class="section-number"> 02 </span>
 
-            <div class="section-header">
+          <p>A little about me.</p>
+        </div>
 
-                <span class="section-number">
-                    02
-                </span>
+        <div class="about-content">
+          <h2>
+            I care about making
+            <span class="serif">digital products</span>
+            feel simple, useful and considered.
+          </h2>
 
-                <p>
-                    A little about me.
-                </p>
-
+          <div class="about-details">
+            <div class="about-description">
+              <p>
+                I work across UX, UI, interaction design, prototyping, visual
+                design and responsive interfaces — with a focus on making
+                digital experiences clear and intentional.
+              </p>
             </div>
 
+            <div class="about-info">
+              <div class="info-row">
+                <span>Based in</span>
+                <strong>Nepal</strong>
+              </div>
 
-            <div class="about-content">
+              <div class="info-row">
+                <span>Focus</span>
+                <strong>UI/UX Design / Product Design</strong>
+              </div>
 
-                <h2>
-                    I care about making
-                    <span class="serif">digital products</span>
-                    feel simple, useful and considered.
-                </h2>
+              <div class="info-row">
+                <span>Tools</span>
 
-
-                <div class="about-details">
-
-                    <div class="about-description">
-
-                        <p>
-                            I work across UX, UI, interaction design,
-                            prototyping, visual design and responsive
-                            interfaces — with a focus on making digital
-                            experiences clear and intentional.
-                        </p>
-
-                    </div>
-
-
-                    <div class="about-info">
-
-                        <div class="info-row">
-                            <span>Based in</span>
-                            <strong>Nepal</strong>
-                        </div>
-
-                        <div class="info-row">
-                            <span>Focus</span>
-                            <strong>UI/UX Design / Product Design</strong>
-                        </div>
-
-                        <div class="info-row">
-    <span>Tools</span>
-
-    <div class="tools-icons">
-        <img src="images/figma.png" alt="Figma">
-        <img src="images/framer.png" alt="Framer">
-        <img src="images/openai.png" alt="ChatGPT">
-        <img src="images/claude.png" alt="Claude">
-    </div>
-</div>
-
-                    </div>
-
+                <div class="tools-icons">
+                  <img src="images/figma.png" alt="Figma" />
+                  <img src="images/framer.png" alt="Framer" />
+                  <img src="images/openai.png" alt="ChatGPT" />
+                  <img src="images/claude.png" alt="Claude" />
                 </div>
-
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-        </section>
-
-
-       <!-- =========================================
+      <!-- =========================================
      WORK EXPERIENCE
 ========================================== -->
 
-<section class="experience-section section">
-
-    <div class="section-header">
-
-        <div>
-
-            <span class="section-number">
-                03
-            </span>
+      <section class="experience-section section" id="work">
+        <div class="section-header">
+          <div>
+            <span class="section-number"> 03 </span>
 
             <h2>
-                Work
-                <span class="serif">Experience</span>
+              Work
+              <span class="serif">Experience</span>
             </h2>
+          </div>
 
+          <p>Where I've worked and what I've been doing.</p>
         </div>
 
-        <p>
-            Where I've worked and what I've been doing.
-        </p>
+        <div class="experience-list">
+          <!-- EXPERIENCE 01 -->
+          <div class="experience-item">
+            <span class="experience-number">01</span>
 
-    </div>
+            <h3>Progressive Labs</h3>
 
-<div class="experience-list">
+            <div class="experience-description">
+              <span>UI/UX Designer</span>
+              <span>July 2025 — Present</span>
+            </div>
+          </div>
 
-    <!-- EXPERIENCE 01 -->
-    <div class="experience-item">
+          <!-- EXPERIENCE 02 -->
+          <div class="experience-item">
+            <span class="experience-number">02</span>
 
-        <span class="experience-number">01</span>
+            <h3>Watobu</h3>
 
-        <h3>
-            Progressive Labs
-        </h3>
+            <div class="experience-description">
+              <span>Product Designer</span>
+              <span>September 2025 — Present</span>
+            </div>
+          </div>
 
-        <div class="experience-description">
-            <span>Product Designer</span>
-            <span>July 2025 — Present</span>
+          <!-- EXPERIENCE 03 -->
+          <div class="experience-item">
+            <span class="experience-number">03</span>
+
+            <h3>UBA Solutions</h3>
+
+            <div class="experience-description">
+              <span>UI/UX Intern</span>
+              <span>April 2025 — July 2025</span>
+            </div>
+          </div>
+
+          <!-- EXPERIENCE 04 -->
+          <div class="experience-item">
+            <span class="experience-number">04</span>
+
+            <h3>Samasta Groups Private Limited</h3>
+
+            <div class="experience-description">
+              <span>UI/UX & Frontend Intern</span>
+              <span>November 2024 — March 2025</span>
+            </div>
+          </div>
         </div>
+      </section>
 
-    </div>
-
-
-    <!-- EXPERIENCE 02 -->
-    <div class="experience-item">
-
-        <span class="experience-number">02</span>
-
-        <h3>
-            Watobu
-        </h3>
-
-        <div class="experience-description">
-            <span>Product Designer</span>
-            <span>September 2025 — Present</span>
-        </div>
-
-    </div>
-
-
-    <!-- EXPERIENCE 03 -->
-    <div class="experience-item">
-
-        <span class="experience-number">03</span>
-
-        <h3>
-            UBA Solutions
-        </h3>
-
-        <div class="experience-description">
-            <span>UI/UX Intern</span>
-            <span>April 2025 — July 2025</span>
-        </div>
-
-    </div>
-
-
-    <!-- EXPERIENCE 04 -->
-    <div class="experience-item">
-
-        <span class="experience-number">04</span>
-
-        <h3>
-            Samasta Groups Private Limited
-        </h3>
-
-        <div class="experience-description">
-            <span>UI/UX & Frontend Intern</span>
-            <span>November 2024 — March 2025</span>
-        </div>
-
-    </div>
-
-</div>
-
-</section>
-
-        <!-- ==========================================
+      <!-- ==========================================
              SELECTED WORK
         ========================================== -->
 
-        <section class="projects-section section" id="work">
+      <section class="projects-section section">
+        <div class="section-header">
+          <div>
+            <span class="section-number">01</span>
 
-            <div class="section-header">
+            <h2>
+              Selected
+              <span class="serif">Work</span>
+            </h2>
+          </div>
 
-                <div>
-                    <span class="section-number">01</span>
+          <p>A few things I've designed.</p>
+        </div>
 
-                    <h2>
-                        Selected
-                        <span class="serif">Work</span>
-                    </h2>
-                </div>
+        <div class="projects-list">
+          <!-- PROJECT 01 -->
 
-                <p>
-                    A few things I've designed.
-                </p>
+          <a
+            href="https://watobu.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project project-large"
+            data-project="watobu"
+            data-cursor="VIEW"
+          >
+            <div class="project-meta">
+              <span class="project-number"> 01 </span>
 
+              <span class="project-type"> Product </span>
             </div>
 
+            <div class="project-title-wrap">
+              <h3 class="project-title">WATOBU</h3>
 
-            <div class="projects-list">
-
-
-                <!-- PROJECT 01 -->
-
-                <a
-                    href="https://watobu.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="project project-large"
-                    data-project="watobu"
-                    data-cursor="VIEW"
-                >
-
-                    <div class="project-meta">
-
-                        <span class="project-number">
-                            01
-                        </span>
-
-                        <span class="project-type">
-                            UI / UX
-                        </span>
-
-                    </div>
-
-
-                    <div class="project-title-wrap">
-
-                        <h3 class="project-title">
-                            WATOBU
-                        </h3>
-
-                        <span class="project-arrow">
-                            ↗
-                        </span>
-
-                    </div>
-
-
-                    <div class="project-image">
-
-                        <img
-                            src="images/Watobu.png"
-                            alt="WATOBU project preview"
-                        >
-
-                    </div>
-
-                </a>
-
-
-                <!-- PROJECT 02 -->
-
-                <a
-                    href="https://nihongonepal.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="project project-medium"
-                    data-project="nihongo-nepal"
-                    data-cursor="VIEW"
-                >
-
-                    <div class="project-meta">
-
-                        <span class="project-number">
-                            02
-                        </span>
-
-                        <span class="project-type">
-                            UI / UX
-                        </span>
-
-                    </div>
-
-
-                    <div class="project-title-wrap">
-
-                        <h3 class="project-title">
-                            Nihongo Nepal
-                        </h3>
-
-                        <span class="project-arrow">
-                            ↗
-                        </span>
-
-                    </div>
-
-
-                    <div class="project-image">
-
-                        <img
-                            src="images/NihongoNepal.png"
-                            alt="Nihongo Nepal project preview"
-                        >
-
-                    </div>
-
-                </a>
-
-
-                <!-- PROJECT 03 -->
-
-                <a
-                    href="https://nihongoglobal.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="project project-large project-last"
-                    data-project="nihongo-global"
-                    data-cursor="VIEW"
-                >
-
-                    <div class="project-meta">
-
-                        <span class="project-number">
-                            03
-                        </span>
-
-                        <span class="project-type">
-                            UI / UX
-                        </span>
-
-                    </div>
-
-
-                    <div class="project-title-wrap">
-
-                        <h3 class="project-title">
-                            Nihongo Global
-                        </h3>
-
-                        <span class="project-arrow">
-                            ↗
-                        </span>
-
-                    </div>
-
-
-                    <div class="project-image">
-
-                        <img
-                            src="images/NihongoGlobal.png"
-                            alt="Nihongo Global project preview"
-                        >
-
-                    </div>
-
-                </a>
-
+              <span class="project-arrow"> ↗ </span>
             </div>
 
-        </section>
+            <div class="project-image">
+              <img src="images/Watobu.png" alt="WATOBU project preview" />
+            </div>
+          </a>
 
+          <!-- PROJECT 02 -->
 
+          <a
+            href="https://nihongonepal.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project project-medium"
+            data-project="nihongo-nepal"
+            data-cursor="VIEW"
+          >
+            <div class="project-meta">
+              <span class="project-number"> 02 </span>
 
+              <span class="project-type"> UI / UX </span>
+            </div>
 
-        <!-- =========================================
+            <div class="project-title-wrap">
+              <h3 class="project-title">Nihongo Nepal</h3>
+
+              <span class="project-arrow"> ↗ </span>
+            </div>
+
+            <div class="project-image">
+              <img
+                src="images/NihongoNepal.png"
+                alt="Nihongo Nepal project preview"
+              />
+            </div>
+          </a>
+
+          <!-- PROJECT 03 -->
+
+          <a
+            href="https://nihongoglobal.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project project-large project-last"
+            data-project="nihongo-global"
+            data-cursor="VIEW"
+          >
+            <div class="project-meta">
+              <span class="project-number"> 03 </span>
+
+              <span class="project-type"> UI / UX </span>
+            </div>
+
+            <div class="project-title-wrap">
+              <h3 class="project-title">Nihongo Global</h3>
+
+              <span class="project-arrow"> ↗ </span>
+            </div>
+
+            <div class="project-image">
+              <img
+                src="images/NihongoGlobal.png"
+                alt="Nihongo Global project preview"
+              />
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- =========================================
              PERSONALITY
         ========================================== -->
 
-        <section class="personality-section section">
+      <section class="personality-section section">
+        <div class="section-header">
+          <span class="section-number"> 04 </span>
 
-            <div class="section-header">
+          <p>Outside the pixels.</p>
+        </div>
 
-                <span class="section-number">
-                    04
-                </span>
+        <div class="personality-content">
+          <h2>
+            Outside the
+            <span class="serif italic">pixels</span>
+          </h2>
 
-                <p>
-                    Outside the pixels.
-                </p>
+          <div class="personality-cloud">
+            <span
+              class="personality-word word-1"
+              data-image="images/travel.png"
+            >
+              Travel
+            </span>
 
-            </div>
+            <span
+              class="personality-word word-2"
+              data-image="images/mountains.png"
+            >
+              Mountains
+            </span>
 
+            <span
+              class="personality-word word-3"
+              data-image="images/onepiece.png"
+            >
+              One Piece
+            </span>
 
-            <div class="personality-content">
+            <span class="personality-word word-4" data-image="images/music.png">
+              Music
+            </span>
 
-                <h2>
-                    Outside the
-                    <span class="serif italic">pixels</span>
-                </h2>
+            <span class="personality-word word-5" data-image="images/photo.png">
+              Photography
+            </span>
 
+            <span class="personality-word word-6" data-image="images/food.png">
+              Food
+            </span>
+          </div>
+        </div>
+      </section>
 
-                <div class="personality-cloud">
-
-                    <span class="personality-word word-1">
-                        Travel
-                    </span>
-
-                    <span class="personality-word word-2">
-                        Mountains
-                    </span>
-
-                    <span class="personality-word word-3">
-                        Motorcycles
-                    </span>
-
-                    <span class="personality-word word-4">
-                        Music
-                    </span>
-
-                    <span class="personality-word word-5">
-                        Photography
-                    </span>
-
-                    <span class="personality-word word-6">
-                        Coffee
-                    </span>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================================
+      <!-- =========================================
              CONTACT
         ========================================== -->
 
-        <section class="contact-section section" id="contact">
+      <section class="contact-section section" id="contact">
+        <div class="contact-top">
+          <span class="section-number"> 05 </span>
 
-            <div class="contact-top">
+          <p>Have something worth designing?</p>
+        </div>
 
-                <span class="section-number">
-                    05
-                </span>
+        <div class="contact-main">
+          <h2>
+            Have something
+            <br />
+            <span class="serif italic">worth designing?</span>
+          </h2>
 
-                <p>
-                    Have something worth designing?
-                </p>
+          <a href="mailto:rohanpzpt6@gmail.com" class="contact-link magnetic">
+            <span>Let's talk</span>
+            <span>↗</span>
+          </a>
+        </div>
 
-            </div>
+        <div class="contact-links">
+          <a href="mailto:[YOUR_EMAIL]"> Email </a>
 
-
-            <div class="contact-main">
-
-                <h2>
-                    Have something
-                    <br>
-                    <span class="serif italic">worth designing?</span>
-                </h2>
-
-
-                <a
-                    href="mailto:rohanpzpt6@gmail.com"
-                    class="contact-link magnetic"
-                >
-                    <span>Let's talk</span>
-                    <span>↗</span>
-                </a>
-
-            </div>
-
-
-            <div class="contact-links">
-
-                <a href="mailto:[YOUR_EMAIL]">
-                    Email
-                </a>
-
-                <a
-                    href="https://www.linkedin.com/in/rohan-prajapati-375440224/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    LinkedIn
-                </a>
-
-            </div>
-
-        </section>
-
+          <a
+            href="https://www.linkedin.com/in/rohan-prajapati-375440224/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </div>
+      </section>
     </main>
-
 
     <!-- =========================================
          FOOTER
     ========================================== -->
 
     <footer class="footer">
+      <div class="footer-left">
+        <a href="#top" class="footer-name"> Rohan Prajapati </a>
 
-        <div class="footer-left">
+        <span> UI/UX Designer / Product Designer </span>
+      </div>
 
-            <a href="#top" class="footer-name">
-                Rohan Prajapati
-            </a>
+      <div class="footer-center"></div>
 
-            <span>
-                UI/UX Designer / Product Designer
-            </span>
+      <div class="footer-right">
+        <span> © 2026 Rohan Prajapati </span>
 
-        </div>
-
-
-        <div class="footer-center">
-        </div>
-
-
-        <div class="footer-right">
-
-            <span>
-                © 2026 Rohan Prajapati
-            </span>
-
-            <a href="#top" class="back-top">
-                Back to top ↑
-            </a>
-
-        </div>
-
+        <a href="#top" class="back-top"> Back to top ↑ </a>
+      </div>
     </footer>
 
-
     <script src="script.js"></script>
-
-</body>
+  </body>
 </html>
