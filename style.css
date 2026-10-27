@@ -62,7 +62,7 @@ button {
 
   --page-padding: clamp(20px, 4vw, 64px);
 
-  --section-space: clamp(110px, 16vw, 240px);
+  --section-space: clamp(110px, 16vw, 160px);
 
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }

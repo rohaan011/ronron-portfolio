@@ -1,36 +1,414 @@
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ronron Portfolio</title>
+    <meta
+      name="description"
+      content="Nihongo Nepal case study by Rohan Prajapati — designing a structured Kanji learning experience for Nepali learners."
+    />
+    <title>Nihongo Nepal — Case Study | Rohan Prajapati</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nihongonepalcasestudy.css" />
   </head>
-  <body>
-    <header>
-      <h1>Ronron Portfolio</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="nihongonepal.html">Nihongo Nepal</a></li>
-          <li><a href="nihongoglobal.html">Nihongo Global</a></li>
-        </ul>
+  <body class="case-study-page">
+    <header class="site-header" id="site-header">
+      <nav class="navbar">
+        <a href="index.html#top" class="logo">Rohan Prajapati</a>
+        <div class="nav-center">
+          <a href="index.html#about">About</a>
+          <a href="index.html#work">Work</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+        <a href="assets/RohanPrajapatiCV.pdf" class="nav-cv" download
+          ><span>Download CV</span><span>↓</span></a
+        >
+        <button
+          class="menu-toggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span>
+        </button>
       </nav>
+      <div class="mobile-menu">
+        <a href="index.html#work">Work</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="assets/RohanPrajapatiCV.pdf" class="mobile-cv" download
+          >Download CV ↓</a
+        >
+      </div>
     </header>
 
-    <main>
-      <section class="projects">
-        <!-- PROJECT 01 -->
-        <div class="project">
-          <a href="nihongonepal.html">
-            <div class="project-content">
-              <h2 class="project-title">Nihongo Nepal</h2>
-              <p class="project-description">
-                A platform for learning Japanese language in Nepal.
+    <main id="top">
+      <section class="case-hero">
+        <div class="case-hero-meta">
+          <a class="case-back" href="index.html#work"
+            >← Back to selected work</a
+          >
+          <span class="eyebrow">Case study / 02</span>
+        </div>
+        <div class="case-hero-copy">
+          <p class="eyebrow">Product design</p>
+          <h1>
+            Nihongo Nepal —
+            <br />
+            <span class="serif italic">Making Kanji easier to learn.</span>
+          </h1>
+          <p class="case-hero-summary">
+            A mobile Japanese learning platform designed for Nepali learners. I
+            worked on the Kanji learning experience, creating a structured way
+            for students to explore characters, understand their meanings, and
+            learn how they are used.
+          </p>
+        </div>
+        <div class="case-facts">
+          <div><span>Role</span><strong>Product Designer</strong></div>
+          <div>
+            <span>Timeline</span><strong>September 2025 – Present</strong>
+          </div>
+          <div><span>Project type</span><strong>Company project</strong></div>
+          <div><span>Team</span><strong>Collaborative</strong></div>
+          <div><span>Status</span><strong>Live product</strong></div>
+          <div><span>Platform</span><strong>Mobile Application</strong></div>
+        </div>
+      </section>
+
+      <section class="case-section case-overview" id="overview">
+        <div class="case-section-heading">
+          <span class="section-number">01 / Overview</span>
+          <p>The project</p>
+        </div>
+        <div class="case-section-content">
+          <h2>
+            Making Japanese learning
+            <span class="serif italic">more approachable.</span>
+          </h2>
+          <p class="case-lead">
+            Nihongo Nepal is a mobile learning platform that helps Nepali
+            students learn Japanese.
+          </p>
+          <p>
+            As part of a team project, I focused on the Kanji section. My goal
+            was to make learning Kanji more approachable by organizing
+            characters into levels and presenting essential information in a
+            clear, consistent format.
+          </p>
+        </div>
+      </section>
+
+      <section class="case-section case-muted" id="problem">
+        <div class="case-section-heading">
+          <span class="section-number">02 / Challenge</span>
+          <p>More than memorizing characters</p>
+        </div>
+        <div class="case-section-content">
+          <h2>
+            Kanji is more than
+            <span class="serif italic">memorizing characters.</span>
+          </h2>
+          <p class="case-lead">
+            For beginners, learning Kanji means understanding its pronunciation,
+            meaning, and usage in different words. Without a clear structure,
+            this information can feel overwhelming.
+          </p>
+          <blockquote>
+            How might we simplify the Kanji learning experience and make it
+            easier for students to understand and revise characters?
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="case-section" id="approach">
+        <div class="case-section-heading">
+          <span class="section-number">03 / Approach</span>
+          <p>Structuring the learning experience</p>
+        </div>
+        <div class="case-section-content">
+          <h2>
+            A clearer path to
+            <span class="serif italic">understanding Kanji.</span>
+          </h2>
+          <div class="journey-list">
+            <article class="journey-item">
+              <span class="journey-index">01</span>
+              <div>
+                <h3>Organizing Kanji into levels</h3>
+                <p>
+                  I divided Kanji into separate levels, creating a more
+                  structured way for learners to navigate the content and find
+                  the characters they wanted to study.
+                </p>
+              </div>
+            </article>
+            <article class="journey-item">
+              <span class="journey-index">02</span>
+              <div>
+                <h3>Creating a consistent learning structure</h3>
+                <p>
+                  I designed a repeatable screen layout for individual
+                  characters, allowing students to follow the same learning
+                  pattern throughout the experience.
+                </p>
+              </div>
+            </article>
+            <article class="journey-item">
+              <span class="journey-index">03</span>
+              <div>
+                <h3>Connecting characters to real usage</h3>
+                <p>
+                  Instead of presenting characters in isolation, I included
+                  examples and related vocabulary to help learners understand
+                  how each Kanji appears in the Japanese language.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section case-muted" id="design">
+        <div class="case-section-heading">
+          <span class="section-number">04 / Design</span>
+          <p>The Kanji learning experience</p>
+        </div>
+        <div class="case-section-content">
+          <h2>
+            A closer look at <span class="serif italic">the experience.</span>
+          </h2>
+          <div class="screenshot-grid">
+            <figure>
+              <img
+                src="images/nihongo/level.png"
+                alt="Nihongo Nepal Kanji levels screen"
+                class="journey-visual visual-discover"
+                loading="lazy"
+              />
+              <figcaption>
+                <b>Kanji Levels</b>
+                <span>
+                  A structured collection that helps learners browse characters
+                  by level.
+                </span>
+              </figcaption>
+            </figure>
+
+            <figure>
+              <img
+                src="images/nihongo/character.png"
+                alt="Nihongo Nepal individual Kanji detail screen"
+                class="journey-visual visual-steps"
+                loading="lazy"
+              />
+              <figcaption>
+                <b>Understanding Each Character</b>
+                <span>
+                  The selected Kanji takes center stage, supported by its
+                  pronunciation and meaning.
+                </span>
+              </figcaption>
+            </figure>
+
+            <figure>
+              <img
+                src="images/nihongo/example.png"
+                alt="Nihongo Nepal Kanji examples and related vocabulary screen"
+                class="journey-visual visual-actions"
+                loading="lazy"
+              />
+              <figcaption>
+                <b>Learning Through Examples</b>
+                <span>
+                  Example sentences and related vocabulary connect individual
+                  characters with practical language usage.
+                </span>
+              </figcaption>
+            </figure>
+          </div>
+          <p class="case-note">
+            Replace these illustrative placeholders with the corresponding Kanji
+            levels, individual character, and examples screens when the final
+            app screenshots are available.
+          </p>
+        </div>
+      </section>
+
+      <section class="case-section" id="decisions">
+        <div class="case-section-heading">
+          <span class="section-number">05 / Design decisions</span>
+          <p>Principles behind the interface</p>
+        </div>
+        <div class="case-section-content">
+          <div class="case-two-col">
+            <div>
+              <h3>Clear visual hierarchy</h3>
+              <p>
+                The Kanji character is the primary focus, while supporting
+                information is organized into distinct sections.
               </p>
             </div>
+            <div>
+              <h3>Consistent layouts</h3>
+              <p>
+                Each character follows the same structure, making the experience
+                predictable and easier to navigate.
+              </p>
+            </div>
+            <div>
+              <h3>Contextual learning</h3>
+              <p>
+                Examples and related vocabulary help connect character
+                recognition with broader language learning.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section case-outcome" id="outcome">
+        <div class="case-section-heading">
+          <span class="section-number">06 / Outcome</span>
+          <p>A structured learning experience</p>
+        </div>
+        <div class="case-section-content">
+          <h2>
+            A more structured way to
+            <span class="serif italic">learn Kanji.</span>
+          </h2>
+          <p class="case-lead">
+            The resulting design established a structured approach to learning
+            Kanji within Nihongo Nepal.
+          </p>
+          <ul>
+            <li>Kanji organized into manageable levels.</li>
+            <li>Character information presented in a consistent hierarchy.</li>
+            <li>
+              Examples and related vocabulary integrated into the learning
+              experience.
+            </li>
+            <li>A repeatable screen structure designed to support revision.</li>
+          </ul>
+          <p class="case-note">
+            These were the intended design outcomes; formal usability metrics
+            and learning results were not measured.
+          </p>
+        </div>
+      </section>
+
+      <section class="case-section case-muted" id="reflection">
+        <div class="case-section-heading">
+          <span class="section-number">07 / Reflection</span>
+          <p>Learnings & next steps</p>
+        </div>
+        <div class="case-section-content">
+          <h2>Designing for <span class="serif italic">learning.</span></h2>
+          <p>
+            This project helped me understand how information architecture and
+            visual hierarchy can support a learning experience.
+          </p>
+          <p>
+            I learned that educational interfaces should do more than display
+            information — they should organize it in a way that makes the next
+            step clear.
+          </p>
+          <p>
+            Given another opportunity, I would test the experience with beginner
+            learners and explore recall quizzes and spaced revision to support
+            long-term retention.
+          </p>
+          <blockquote>
+            Designing for learning means making complex information easier to
+            understand, one step at a time.
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- =========================================
+             CONTACT
+        ========================================== -->
+
+      <section class="contact-section section" id="contact">
+        <div class="contact-top">
+          <span class="section-number"> 08 </span>
+
+          <p>Have something worth designing?</p>
+        </div>
+
+        <div class="contact-main">
+          <h2>
+            Have something
+            <br />
+            <span class="serif italic">worth designing?</span>
+          </h2>
+
+          <a href="mailto:rohanpzpt6@gmail.com" class="contact-link magnetic">
+            <span>Let's talk</span>
+            <span>↗</span>
+          </a>
+        </div>
+
+        <div class="contact-links">
+          <a href="mailto:rohanpzpt6@gmail.com"> Email </a>
+
+          <a
+            href="https://www.linkedin.com/in/rohan-prajapati-375440224/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
           </a>
         </div>
       </section>
     </main>
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer">
+      <div class="footer-left">
+        <a href="#top" class="footer-name"> Rohan Prajapati </a>
+
+        <span> UI/UX Designer / Product Designer </span>
+      </div>
+
+      <div class="footer-center"></div>
+
+      <div class="footer-right">
+        <span> © 2026 Rohan Prajapati </span>
+
+        <a href="#top" class="back-top"> Back to top ↑ </a>
+      </div>
+    </footer>
+    <script>
+      const header = document.querySelector(".site-header");
+      const menuToggle = document.querySelector(".menu-toggle");
+      const mobileMenu = document.querySelector(".mobile-menu");
+
+      window.addEventListener("scroll", () => {
+        header?.classList.toggle("scrolled", window.scrollY > 24);
+      });
+
+      menuToggle?.addEventListener("click", () => {
+        const isOpen = document.body.classList.toggle("menu-open");
+        mobileMenu?.classList.toggle("open", isOpen);
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      mobileMenu?.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          document.body.classList.remove("menu-open");
+          mobileMenu.classList.remove("open");
+          menuToggle?.setAttribute("aria-expanded", "false");
+        });
+      });
+    </script>
   </body>
 </html>
