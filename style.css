@@ -210,19 +210,15 @@ button {
 
 .site-header {
   position: fixed;
-
   top: 0;
   left: 0;
-
   width: 100%;
-
   z-index: 1000;
-
   padding: 20px var(--page-padding);
-
   transition:
     padding 0.45s var(--ease),
-    background 0.45s ease;
+    background 0.45s ease,
+    transform 0.35s ease;
 }
 
 .site-header.scrolled {
@@ -375,7 +371,25 @@ button {
 }
 
 .mobile-menu {
-  display: none;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  padding: var(--page-padding);
+  background: var(--background);
+  transform: translateY(-100%);
+  visibility: hidden;
+  transition:
+    transform 0.6s var(--ease),
+    visibility 0.6s;
+  z-index: -1;
+}
+
+.mobile-menu.open {
+  transform: translateY(0);
+  visibility: visible;
 }
 
 /* =========================================
@@ -568,16 +582,6 @@ button {
   transition: transform 1s var(--ease);
 }
 
-.project:hover .project-image {
-  opacity: 1;
-  transform: translate3d(var(--image-x, 0px), var(--image-y, -50%), 0) scale(1)
-    rotate(0deg);
-}
-
-.project:hover .project-image img {
-  transform: scale(1.04);
-}
-
 .project:hover .project-title {
   transform: translateX(15px);
 }
@@ -594,6 +598,34 @@ button {
   transition: transform 0.5s var(--ease);
 }
 
+.case-study-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border: 1px solid var(--line);
+  border-radius: 100px;
+
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+
+  transition:
+    background 0.4s var(--ease),
+    color 0.4s var(--ease),
+    border-color 0.4s var(--ease);
+}
+
+.case-study-arrow {
+  display: inline-block;
+  font-size: 16px;
+  transition: transform 0.4s var(--ease);
+}
+
+.project:hover .case-study-arrow {
+  transform: translate(0, 0) rotate(45deg);
+}
 /* =========================================
    08. ABOUT
 ========================================= */
@@ -603,11 +635,11 @@ button {
 }
 
 .about-content > h2 {
-max-width: 1150px;
- font-size: clamp(48px, 6.2vw, 92px);
- line-height: 1;
- letter-spacing: -0.06em;
-font-weight: 500;
+  max-width: 1150px;
+  font-size: clamp(48px, 6.2vw, 64px);
+  line-height: 1;
+  letter-spacing: -0.05em;
+  font-weight: 500;
 }
 
 .about-details {
@@ -629,7 +661,6 @@ font-weight: 500;
   font-size: 18px;
   line-height: 1.55;
   text-align: left;
-
 }
 
 .about-info {
@@ -1063,13 +1094,11 @@ font-weight: 500;
     transform: translateY(0);
   }
 
-  .mobile-menu > a {
+  /* Apply large typography only to navigation links */
+  .mobile-menu > a:not(.mobile-cv) {
     font-family: var(--serif);
-
     font-size: clamp(55px, 13vw, 100px);
-
     line-height: 0.85;
-
     letter-spacing: -0.04em;
   }
 
